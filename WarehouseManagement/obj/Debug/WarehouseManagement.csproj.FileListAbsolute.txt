@@ -25,3 +25,14 @@ C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\obj\Debug\Wareh
 C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
 C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.Form2.resources
 C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\MySql.Data.xml
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\ClosedXML.dll
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\ClosedXML.Extensions.AspNet.dll
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\ExcelNumberFormat.dll
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\ClosedXML.pdb
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\ClosedXML.xml
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\ExcelNumberFormat.xml
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\dataGridClassLibrary.dll
+C:\Users\hp\source\repos\WarehouseManagement\WarehouseManagement\bin\Debug\dataGridClassLibrary.pdb
