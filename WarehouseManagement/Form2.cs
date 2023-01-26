@@ -67,23 +67,29 @@ namespace WarehouseManagement
             textBox5.Hide();
         }
 
-        public void resizeGrid1()
+        private void resetGridData()
         {
-            for (int i = 0; i < dataGridView1.Columns.Count - 1; i++)
-            {
-                dataGridView1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            }
-            dataGridView1.Columns[dataGridView1.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-            for (int i = 0; i < dataGridView1.Columns.Count; i++)
-            {
-                int colw = dataGridView1.Columns[i].Width;
-                dataGridView1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                dataGridView1.Columns[i].Width = colw;
-            }
+            button3.ResetText();
+            button3.Hide();
+            label1.ResetText();
+            label2.ResetText();
+            label3.ResetText();
+            label4.ResetText();
+            label5.ResetText();
+            textBox1.Hide();
+            textBox2.Hide();
+            textBox3.Hide();
+            textBox4.Hide();
+            textBox5.Hide();
+            textBox1.ResetText();
+            textBox2.ResetText();
+            textBox3.ResetText();
+            textBox4.ResetText();
+            textBox5.ResetText();
         }
         private void rawToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource= this.warehousemanagementDataSet.rawmaterial;
             dataGridView1.Refresh();
             dataGridView1.Show();
@@ -94,6 +100,7 @@ namespace WarehouseManagement
 
         private void finToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.finiteproduct;
             dataGridView1.Refresh();
             DataGridResizer.AutoResize(dataGridView1);
@@ -102,6 +109,7 @@ namespace WarehouseManagement
 
         private void inToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.inboundorder; 
             dataGridView1.Refresh();
             DataGridResizer.AutoResize(dataGridView1);
@@ -110,6 +118,7 @@ namespace WarehouseManagement
 
         private void outToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.outboundorder; 
             dataGridView1.Refresh();
             DataGridResizer.AutoResize(dataGridView1);
@@ -118,6 +127,7 @@ namespace WarehouseManagement
 
         private void transfersToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.transfer;
             dataGridView1.Refresh();
             DataGridResizer.AutoResize(dataGridView1);
@@ -126,6 +136,7 @@ namespace WarehouseManagement
 
         private void deliveriesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.delivery;
             dataGridView1.Refresh();
             DataGridResizer.AutoResize(dataGridView1);
@@ -134,6 +145,7 @@ namespace WarehouseManagement
 
         private void clientsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.client;
             dataGridView1.Refresh();
             dataGridView1.Show();
@@ -142,6 +154,7 @@ namespace WarehouseManagement
 
         private void vendorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.vendor;
             dataGridView1.Refresh();
             dataGridView1.Show();
@@ -150,6 +163,7 @@ namespace WarehouseManagement
 
         private void boxesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.box;
             dataGridView1.Refresh();
             dataGridView1.Show();
@@ -158,6 +172,7 @@ namespace WarehouseManagement
 
         private void warehouseToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             dataGridView1.DataSource = this.warehousemanagementDataSet.warehouse; 
             dataGridView1.Refresh();
             dataGridView1.Show();
@@ -199,6 +214,7 @@ namespace WarehouseManagement
 
         private void rawToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Material name:";
             label1.Show();
             textBox1.Show();
@@ -215,6 +231,7 @@ namespace WarehouseManagement
 
         private void finToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Material name:";
             label1.Show();
             textBox1.Show();
@@ -230,6 +247,7 @@ namespace WarehouseManagement
         }
         private void inToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Vendor ID:";
             label1.Show();
             textBox1.Show();
@@ -248,6 +266,7 @@ namespace WarehouseManagement
         }
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Client Name:";
             label1.Show();
             textBox1.Show();
@@ -265,6 +284,7 @@ namespace WarehouseManagement
         } 
         private void vendorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Vendor Name:";
             label1.Show();
             textBox1.Show();
@@ -282,6 +302,7 @@ namespace WarehouseManagement
         }
         private void transferToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Material Name:";
             label1.Show();
             textBox1.Show();
@@ -299,6 +320,7 @@ namespace WarehouseManagement
         } 
         private void receptionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Vendor ID:";
             label1.Show();
             textBox1.Show();
@@ -318,6 +340,7 @@ namespace WarehouseManagement
         } 
         private void warehouseToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Location:";
             label1.Show();
             textBox1.Show();
@@ -337,6 +360,7 @@ namespace WarehouseManagement
         } 
         private void boxToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Material Name:";
             label1.Show();
             textBox1.Show();
@@ -372,6 +396,7 @@ namespace WarehouseManagement
         }
         private void rawToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Material ID";
             label1.Show();
             textBox1.Show();
@@ -391,6 +416,7 @@ namespace WarehouseManagement
         } 
         private void finToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Material ID";
             label1.Show();
             textBox1.Show();
@@ -410,6 +436,7 @@ namespace WarehouseManagement
         }       
         private void clientToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Client ID";
             label1.Show();
             textBox1.Show();
@@ -429,6 +456,7 @@ namespace WarehouseManagement
         }  
         private void vendorToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Vendor ID";
             label1.Show();
             textBox1.Show();
@@ -445,6 +473,7 @@ namespace WarehouseManagement
         }
         private void inToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Order ID";
             label1.Show();
             textBox1.Show();
@@ -461,6 +490,7 @@ namespace WarehouseManagement
         }
             private void outToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            resetGridData();
             label1.Text = "Order ID";
             label1.Show();
             textBox1.Show();
